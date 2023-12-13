@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="22155" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22131"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="Stack View standard spacing" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="CartItemCollectionViewCell" customModule="e_commerce" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="837" height="447"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="837" height="447"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" alignment="center" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="xvU-Oh-nuv">
+                        <rect key="frame" x="0.0" y="0.0" width="837" height="447"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="h3W-7r-Tq2">
+                                <rect key="frame" x="0.0" y="211" width="25" height="25"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="25" id="D51-r9-27G"/>
+                                    <constraint firstAttribute="height" constant="25" id="ZhA-Gm-IYD"/>
+                                </constraints>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <connections>
+                                    <action selector="checkBoxClicked:" destination="gTV-IL-0wX" eventType="touchUpInside" id="thH-i2-G6q"/>
+                                </connections>
+                            </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="2P1-LY-2oj">
+                                <rect key="frame" x="35" y="60.666666666666657" width="500" height="326"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="lessThanOrEqual" constant="500" id="VmO-Zd-Ca4"/>
+                                </constraints>
+                            </imageView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalCentering" spacingType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="EhT-CL-O4o">
+                                <rect key="frame" x="545" y="0.0" width="292" height="447"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uMe-8j-Ee5">
+                                        <rect key="frame" x="8" y="67" width="276" height="20.333333333333329"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="751" text="99999" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tna-rW-1AQ">
+                                        <rect key="frame" x="8" y="222.33333333333334" width="276" height="20.333333333333343"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" translatesAutoresizingMaskIntoConstraints="NO" id="64R-JF-T0s">
+                                        <rect key="frame" x="8" y="370.66666666666669" width="276" height="34.333333333333314"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LTS-tE-dK4">
+                                                <rect key="frame" x="0.0" y="0.0" width="81.666666666666671" height="34.333333333333336"/>
+                                                <color key="tintColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="plain" image="minus" catalog="system"/>
+                                                <connections>
+                                                    <action selector="decrementCount:" destination="gTV-IL-0wX" eventType="touchUpInside" id="9T7-GE-Tbo"/>
+                                                </connections>
+                                            </button>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="17" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="q1S-oD-GqB">
+                                                <rect key="frame" x="81.666666666666629" y="0.0" width="29.333333333333329" height="34.333333333333336"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="acu-nb-5yh">
+                                                <rect key="frame" x="111" y="0.0" width="81.666666666666686" height="34.333333333333336"/>
+                                                <color key="tintColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="plain" image="plus" catalog="system"/>
+                                                <connections>
+                                                    <action selector="incrementCount:" destination="gTV-IL-0wX" eventType="touchUpInside" id="Sh2-hI-JOL"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="252" horizontalCompressionResistancePriority="749" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NWG-CN-KYy">
+                                                <rect key="frame" x="192.66666666666663" y="0.0" width="83.333333333333314" height="34.333333333333336"/>
+                                                <color key="tintColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="plain" image="trash" catalog="system"/>
+                                                <connections>
+                                                    <action selector="deleteCartItem:" destination="gTV-IL-0wX" eventType="touchUpInside" id="zRP-3d-UsG"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="200" id="VVU-Ia-kVO"/>
+                                        </constraints>
+                                    </stackView>
+                                </subviews>
+                                <directionalEdgeInsets key="directionalLayoutMargins" top="8" leading="8" bottom="8" trailing="8"/>
+                            </stackView>
+                        </subviews>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="EhT-CL-O4o" secondAttribute="trailing" id="QYv-kH-XpU"/>
+                            <constraint firstAttribute="bottom" secondItem="EhT-CL-O4o" secondAttribute="bottom" id="g4K-TP-Jhm"/>
+                            <constraint firstItem="EhT-CL-O4o" firstAttribute="top" secondItem="xvU-Oh-nuv" secondAttribute="top" id="xgO-xk-fpX"/>
+                        </constraints>
+                    </stackView>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="DeX-oY-opi"/>
+            <constraints>
+                <constraint firstItem="xvU-Oh-nuv" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="2PQ-nP-QhY"/>
+                <constraint firstAttribute="bottom" secondItem="xvU-Oh-nuv" secondAttribute="bottom" id="Flx-lE-Q7D"/>
+                <constraint firstAttribute="trailing" secondItem="xvU-Oh-nuv" secondAttribute="trailing" id="iJ1-3j-rWo"/>
+                <constraint firstItem="xvU-Oh-nuv" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="osd-bd-m58"/>
+            </constraints>
+            <size key="customSize" width="837" height="447"/>
+            <connections>
+                <outlet property="cartItemCount" destination="q1S-oD-GqB" id="32f-Np-8pr"/>
+                <outlet property="cartItemImage" destination="2P1-LY-2oj" id="kZy-bf-hq3"/>
+                <outlet property="cartItemName" destination="uMe-8j-Ee5" id="AAv-Yp-Wef"/>
+                <outlet property="cartItemPrice" destination="tna-rW-1AQ" id="NRj-aF-Jx6"/>
+                <outlet property="checkBox" destination="h3W-7r-Tq2" id="FfQ-hJ-h8G"/>
+            </connections>
+            <point key="canvasLocation" x="141.22137404580153" y="123.59154929577466"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="minus" catalog="system" width="128" height="26"/>
+        <image name="plus" catalog="system" width="128" height="113"/>
+        <image name="trash" catalog="system" width="117" height="128"/>
+    </resources>
+</document>
