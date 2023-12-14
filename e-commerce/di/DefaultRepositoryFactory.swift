@@ -8,8 +8,6 @@
 import Foundation
 
 class DefaultRepositoryFactory{
-
-    
     private static var database: DataBase!
     private static var apiManager: APIManager!
     private static var cacheLayer: CacheLayer!
