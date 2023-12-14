@@ -15,6 +15,7 @@ class TestDataBaseFactory{
             TestDataBaseFactory.shared = FireBase()
             return TestDataBaseFactory.shared
         }
+        
         return instance
     }
 }
